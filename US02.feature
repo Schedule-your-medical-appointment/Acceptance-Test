@@ -13,6 +13,7 @@ Then se marcarà ese horario
 Example:
 |usuario|día|hora|disponibles|
 
+
 Scenario: El usuario escoge un dìa no valido
 Given que la aplicacion muestra en azul los horarios disponibles
 y en gris los horarios no disponibles para agendar cita en un calendario.
@@ -29,7 +30,6 @@ horario de su cita
 When el usuario presione "confirmar" 
 y el usuario no haya esocgido un horario
 Then: aparecerà un mensaje "Falta seleccionar un horario en la pantalla"
-
 
 Example:
 |usuario|día|hora|falta seleccionar|
